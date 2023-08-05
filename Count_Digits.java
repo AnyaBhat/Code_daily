@@ -31,10 +31,8 @@ class Solution{
         int r,temp=N,count=0;
         while(temp>0){
             r=temp%10;
-            if(r!=0){
-                if(N%r==0){
-                    count++;
-                }
+            if(r!=0 && N%r==0){
+                count++;
             }
             temp/=10;
         }
